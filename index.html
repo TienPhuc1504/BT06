@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar with Profile</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <img src="logo.png" alt="logo" class="header-logo" />
+        <button class="sidebar-toggle">
+          <span class="material-icons">chevron_left</span>
+        </button>
+      </div>
+      <div class="sidebar-content">
+        <form class="search-form">
+          <span class="material-icons">search</span>
+          <input type="text" placeholder="Search..." />
+        </form>
+        <ul class="menu-list">
+          <li>
+            <a href="#" class="menu-link active" data-content="dashboard-content">
+              <span class="material-icons">dashboard</span>
+              <span class="menu-label">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="profile-content">
+              <span class="material-icons">person</span>
+              <span class="menu-label">Profile</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://tienphuc1504.github.io/DrawingApp/" target="_blank" class="menu-link">
+              <span class="material-icons">brush</span>
+              <span class="menu-label">Drawing App</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://tienphuc1504.github.io/MemoryCards/" target="_blank" class="menu-link">
+              <span class="material-icons">memory</span>
+              <span class="menu-label">Memory Cards Game</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="analytics-content">
+              <span class="material-icons">insert_chart</span>
+              <span class="menu-label">Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="notifications-content">
+              <span class="material-icons">notifications</span>
+              <span class="menu-label">Notifications</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="favourites-content">
+              <span class="material-icons">star</span>
+              <span class="menu-label">Favourites</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="products-content">
+              <span class="material-icons">storefront</span>
+              <span class="menu-label">Products</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="customers-content">
+              <span class="material-icons">group</span>
+              <span class="menu-label">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" data-content="settings-content">
+              <span class="material-icons">settings</span>
+              <span class="menu-label">Settings</span>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <div class="sidebar-footer">
+        <button class="theme-toggle">
+          <span class="theme-label">
+            <span class="material-icons theme-icon">dark_mode</span>
+            <span class="theme-text">Dark Mode</span>
+          </span>
+          <span class="theme-toggle-track">
+            <span class="theme-toggle-indicator"></span>
+          </span>
+        </button>
+      </div>
+    </aside>
+    <nav class="site-nav">
+      <button class="sidebar-toggle">
+        <span class="material-icons">menu</span>
+      </button>
+    </nav>
+    <main class="main-content">
+      <div id="dashboard-content" class="content-section active">
+        <h2 class="page-title">Dashboard Overview</h2>
+        <div class="card">
+          <p>Welcome to your dashboard! Use the menu to navigate, toggle the sidebar, or switch between light and dark themes to personalize your experience.</p>
+        </div>
+      </div>
+      <div id="profile-content" class="content-section">
+        <div class="main">
+          <div class="profile-card">
+            <div class="image">
+              <img src="images/Avatar.png" alt="" class="profile-pic" />
+            </div>
+            <div class="data">
+              <h2>Vũ Tiến Phúc</h2>
+              <span>Developer & Designer</span>
+            </div>
+            <div class="row">
+              <div class="info">
+                <h3>Following</h3>
+                <span>120</span>
+              </div>
+              <div class="info">
+                <h3>Followers</h3>
+                <span>5000</span>
+              </div>
+              <div class="info">
+                <h3>Posts</h3>
+                <span>209</span>
+              </div>
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn">Message</a>
+              <a href="#" class="btn">Follow Me</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card-wrapper">
+            <ul class="card-list swiper-wrapper">
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/designer.jpg" alt="Card Image" class="card-image" />
+                  <p class="badge badge-gamer">Gamer</p>
+                  <h2 class="card-title">Mixigaming</h2>
+                  <p class="card-text">MixiGaming3con@gmail.com</p>
+                  <button class="card-button">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/developer.jpg" alt="Card Image" class="card-image" />
+                  <p class="badge badge-designer">Designer</p>
+                  <h2 class="card-title">Nhism</h2>
+                  <p class="card-text">thailinh1606@gmail.com</p>
+                  <button class="card-button">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/marketer.jpg" alt="Card Image" class="card-image" />
+                  <p class="badge badge-marketer">Marketer</p>
+                  <h2 class="card-title">Pino</h2>
+                  <p class="card-text">PinoStreamer@gmail.com</p>
+                  <button class="card-button">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/gamer.jpg" alt="Card Image" class="card-image" />
+                  <p class="badge badge-editor">Editor</p>
+                  <h2 class="card-title">Rambo</h2>
+                  <p class="card-text">Bungo@gmail.com</p>
+                  <button class="card-button">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </a>
+              </li>
+              <li class="card-item swiper-slide">
+                <a href="#" class="card-link">
+                  <img src="images/editor.jpg" alt="Card Image" class="card-image" />
+                  <p class="badge badge-designer">Designer</p>
+                  <h2 class="card-title">Dev Nguyen</h2>
+                  <p class="card-text">dvgnguyenx@gmail.com</p>
+                  <button class="card-button">
+                    <span class="material-icons">arrow_forward</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+            <div class="swiper-button-prev swiper-slide-button"></div>
+            <div class="swiper-button-next swiper-slide-button"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+      <div id="analytics-content" class="content-section">
+        <h2 class="page-title">Analytics</h2>
+        <div class="card">
+          <p>Analytics content goes here.</p>
+        </div>
+      </div>
+      <div id="notifications-content" class="content-section">
+        <h2 class="page-title">Notifications</h2>
+        <div class="card">
+          <p>Notifications content goes here.</p>
+        </div>
+      </div>
+      <div id="favourites-content" class="content-section">
+        <h2 class="page-title">Favourites</h2>
+        <div class="card">
+          <p>Favourites content goes here.</p>
+        </div>
+      </div>
+      <div id="products-content" class="content-section">
+        <h2 class="page-title">Products</h2>
+        <div class="card">
+          <p>Products content goes here.</p>
+        </div>
+      </div>
+      <div id="customers-content" class="content-section">
+        <h2 class="page-title">Customers</h2>
+        <div class="card">
+          <p>Customers content goes here.</p>
+        </div>
+      </div>
+      <div id="settings-content" class="content-section">
+        <h2 class="page-title">Settings</h2>
+        <div class="card">
+          <p>Settings content goes here.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
